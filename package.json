@@ -1,0 +1,24 @@
+{
+  "name": "@ryuapp/oxlint-config",
+  "version": "0.1.0",
+  "description": "Ryu's Oxlint config",
+  "type": "module",
+  "license": "MIT-0",
+  "repository": "ryuapp/oxlint-config",
+  "exports": {
+    ".": "./oxlint.config.ts"
+  },
+  "devDependencies": {
+    "oxlint": "1.64.0"
+  },
+  "peerDependencies": {
+    "oxlint": ">=1.63.0"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "sideEffects": false,
+  "files": [
+    "oxlint.config.ts"
+  ]
+}

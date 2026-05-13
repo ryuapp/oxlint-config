@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
+  },
+  "lint": false
+}
