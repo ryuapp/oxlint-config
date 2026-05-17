@@ -18,6 +18,18 @@ export default defineConfig({
       "require",
       "setImmediate",
     ],
+    "eslint/no-restricted-imports": [
+      "error",
+      {
+        patterns: [
+          {
+            regex: "^(?:jsr|npm):",
+            message:
+              "Do not import directly with npm: or jsr: protocols. Register dependencies in package.json or deno.json(c) to manage versions.",
+          },
+        ],
+      },
+    ],
     "eslint/curly": "error",
     "import/consistent-type-specifier-style": "error",
     "import/no-empty-named-blocks": "error",
